@@ -14,8 +14,6 @@ jQuery는 다운로드 또는 구글CDN을 가져와 문서에 포함시켜 사�
 
    [http://jquery.com/download/](http://jquery.com/download/)
 
-   ​
-
 2. 구글 CDN
 
    ```html
