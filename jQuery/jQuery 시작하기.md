@@ -1,8 +1,8 @@
 # # jQuery - 1 (시작하기)
 
-*jQuery는 자바스크립트 라이브러리로 매우 빠르고, 가볍고, 강력하다.*
+jQuery는 자바스크립트 라이브러리로 매우 빠르고, 가볍고, 강력하다.
 
-*DOM을 통해 HTML 문서를 빠르게 **순회(Traversing)**하여 요소를 **선택(Selecting)**하고, **조작(Manipulating)**한다.*
+DOM을 통해 HTML문서를 빠르게 **순회(Traversing)**하여 요소를 **선택(Selecting)**하고, **조작(Manipulating)**한다.
 
 
 
