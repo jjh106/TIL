@@ -6,7 +6,7 @@
 
 ### 일반적인 과정
 
-![일반적](../script-async-defer-1.png)
+![일반적](../assets/script-async-defer-1.png)
 
 ---
 
@@ -20,7 +20,7 @@ HTML구문과 동시에 스크립트를 가져온 후 스크립트가 준비 될
 <script async src="./main.js"></script>
 ```
 
-![async](../script-async-defer-2.png)
+![async](../assets/script-async-defer-2.png)
 
 ---
 
@@ -36,7 +36,7 @@ async와 다르게 호출된 순서대로 실행된다.
 <script async src="./main.js"></script>
 ```
 
-![defer](../script-async-defer-3.png)
+![defer](../assets/script-async-defer-3.png)
 
 ---
 
