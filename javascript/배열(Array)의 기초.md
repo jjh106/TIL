@@ -2,19 +2,19 @@
 
 ### 1. 배열 만들기
 
-* **리터럴 방식**
-
-var menus = ["menu1", "menu2", "menu3", "menu4"];
-
-* **생성자 방식**
-
-var menus = new Array("menu1", "menu2", "menu3", "menu4");
+> - **리터럴 방식**
+>
+>   var menus = ["menu1", "menu2", "menu3", "menu4"];
+>
+> - **생성자 방식**
+>
+>   var menus = new Array("menu1", "menu2", "menu3", "menu4");
 
 ---
 
 ### 2. 배열 요소의 개수 
 
-*배열의 프로퍼티 중 length를 이용하여 배열 요소의 개수를 알아낼 수 있다.*
+> 배열의 프로퍼티 중 length를 이용하여 배열 요소의 개수를 알아낼 수 있다.
 
 ```javascript
 var users = ["user1", "user2", "user3", "user4"];
