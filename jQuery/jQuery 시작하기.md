@@ -1,4 +1,4 @@
-# # jQuery - 1 (시작하기)
+# jQuery Start
 
 *jQuery는 자바스크립트 라이브러리로 매우 빠르고, 가볍고, 강력하다.*
 
@@ -6,25 +6,24 @@
 
 
 
-### # jQuery 설치
+### 1. jQuery 설치
 
-jQuery는 다운로드 또는 구글CDN을 가져와 문서에 포함시켜 사용할 수 있다.
+> jQuery는 다운로드 또는 구글CDN을 가져와 문서에 포함시켜 사용할 수 있다.
 
-1. 다운로드
+**1-1. 다운로드**
 
-   [http://jquery.com/download/](http://jquery.com/download/)
+[http://jquery.com/download/](http://jquery.com/download/)
 
-2. 구글 CDN
+**1-2. 구글 CDN**
 
-   ```html
-   <head>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   </head>
-   ```
-
+```html
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+```
 ---
 
-### # window.onload VS jQuery().ready()
+### 2. window.onload VS jQuery().ready()
 
 > window.onload = function( ) { };
 >
@@ -42,13 +41,13 @@ jQuery는 다운로드 또는 구글CDN을 가져와 문서에 포함시켜 사�
 
 
 
-#### jQuery().ready() 함수 속기형 작성
+**# jQuery().ready() 함수 속기형 작성**
 
-> $(function( ) {...});
+ **☞ $(function( ) {...});**
 
 ---
 
-### # $ Conflict
+### 3. $ Conflict
 
 *대부분의 라이브러리의 참조 키워드가 $이기 때문에*
 
