@@ -154,11 +154,11 @@ console.log("newMenu : "+menus.join(","));
 
 > 배열 요소를 오름차순 또는 내림차순으로 정렬해준다.
 >
-> 사용법 ) var result = 배열.sort([compareFunction]);
+> 사용법 ) var result = 배열.sort(compareFunction);
+>
+> sort() 함수는 배열 요소를 모두 문자열로 간주하고 알파벳순으로 정렬하기 때문에 비교 함수가 필요하다.
 >
 > compareFunction : 정렬 순서를 정의하는 함수로 생략할 경우 오름차순으로 처리한다. 
-
-#### 8-1. 오름차순 정렬(작은 것->큰 것)
 
 ```javascript
 var userNames = ["철수", "영희", "진수", "민희"];
@@ -186,6 +186,8 @@ console.log("newUserNames : "+userNames.join(","));
 
 #### 8-3. 숫자 정렬
 
+##### 8-3-1. 오름차순
+
 ```javascript
 var aryData = [5,2,8,9,3,6,4,1,77];
 console.log("aryData : "+ aryData.join(","));
@@ -196,5 +198,74 @@ aryData.sort(function(a,b){
 });
 console.log("newAryData : " + aryData.join(","));
 // newAryData : 1,2,3,4,5,6,8,9,77
+```
+
+##### 8-3-2. 내림차순
+
+```javascript
+var aryData = [5,2,8,9,3,6,4,1,77];
+console.log("aryData : "+ aryData.join(","));
+// aryData : 5,2,8,9,3,6,4,1,77
+
+ary.Data.sort(function(a, b){
+  return b-a;
+});
+console.log("newAryData :"+ aryData.join(","));
+// newAryData : 77,9,8,6,5,4,3,2,1
+```
+
+---
+
+##### * compareFunction
+
+> 뺄셈의 결과가 음수라는 것(a - b)은 왼쪽 숫자가 오른쪽 숫자보다 작다는 것을 의미한다.(오름차순)
+>
+> 뺄셈의 결과가 양수라는 것(b - a)은 왼쪽 숫자가 오른쪽 숫자보다 크다는 것을 의미한다.(내림차순)
+
+```javascript
+var compareFunction1 = function(num1, num2) {
+  return num1 - num2;
+};
+
+var compareFunction2 = function(num1, num2) {
+  return num2 - num1;
+};
+```
+
+---
+
+##### * object 정렬
+
+```javascript
+var student = [
+    { name : "정", age : 21},
+    { name : "이", age : 25},
+    { name : "박", age : 13},
+    { name : "김", age : 44}
+]
+
+/* 이름순으로 정렬 */
+student.sort(function(a, b) { // 오름차순
+    return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+    // 김, 박, 이, 정
+});
+
+student.sort(function(a, b) { // 내림차순
+    return a.name > b.name ? -1 : a.name < b.name ? 1 : 0;
+    // 정, 이, 박, 김
+});
+
+/* 나이순으로 정렬 */
+var sortingField = "age";
+
+student.sort(function(a, b) { // 오름차순
+    return a[sortingField] - b[sortingField];
+    // 13, 21, 25, 44
+});
+
+student.sort(function(a, b) { // 내림차순
+    return b[sortingField] - a[sortingField];
+    // 44, 25, 21, 13
+});
 ```
 
