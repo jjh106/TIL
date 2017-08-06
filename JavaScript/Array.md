@@ -269,3 +269,5 @@ student.sort(function(a, b) { // 내림차순
 });
 ```
 
+##### *추가 : 빈 값을 추가하면 마지막에 undefined로 sort된다.
+
