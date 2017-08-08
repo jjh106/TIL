@@ -10,6 +10,14 @@
 >
 >   var menus = new Array("menu1", "menu2", "menu3", "menu4");
 
+```javascript
+new Array(2); // [undefined, undefined]
+
+new Array('a'); // [a]
+
+new Array([1,2,3]); // [[1,2,3]]
+```
+
 ---
 
 ### 2. 배열 요소의 개수 
@@ -232,8 +240,6 @@ var compareFunction2 = function(num1, num2) {
 };
 ```
 
----
-
 ##### * object 정렬
 
 ```javascript
@@ -271,3 +277,34 @@ student.sort(function(a, b) { // 내림차순
 
 ##### *추가 : 빈 값을 추가하면 마지막에 undefined로 sort된다.
 
+---
+
+### 9. isArray()
+
+> 배열 여부를 true, false로 반환한다.
+>
+> Array.isArray()로 호출
+
+```javascript
+typeof[1,2] // object 반환
+
+Array.isArray([1,2]); // true
+```
+
+---
+
+### 10. forEach()
+
+> 배열 전체를 돌며 해당 배열의 요소에 어떠한 작업을 수행하고 싶을 때 사용하는 메서드.
+>
+> Array.forEach(function(element, index, list){ }, this);
+>
+> break와 continue문을 사용할 수 없다.(callback함수에서 return을 만나면 다음 엘리먼트를 처리)
+>
+> callback함수에서 this로 참조할 오브젝트를 지정 가능.
+
+```javascript
+[1,2,3].forEach(function(element, index, list){
+  console.log("value:" + element + ", index:" + index);
+})
+```
